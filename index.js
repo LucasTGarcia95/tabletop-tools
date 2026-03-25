@@ -71,7 +71,14 @@ function heal(maxHp, currentHp, healAmount) {
  * @param {string} rank - character's proficiency rank
  * @returns {number} the character's proficiency bonus
  */
-function getProficiencyBonus(level, rank) {}
+function getProficiencyBonus(level, rank) {
+  if (rank === "untrained") return 0;
+  if (rank === "trained") return level + 2;
+  if (rank === "expert") return level + 4;
+  if (rank === "master") return level + 6;
+  if (rank === "legendary") return level + 8;
+  return 0;
+}
 
 /**
  * A creature can get a bonus to its armor class (AC) by taking cover.
