@@ -6,7 +6,7 @@
  * @returns {boolean} whether the wizard can cast the spell
  */
 function canCastSpell(isSpellPrepared, hasScroll) {
-  // TODO
+  return isSpellPrepared || hasScroll;
 }
 
 /**
@@ -16,9 +16,7 @@ function canCastSpell(isSpellPrepared, hasScroll) {
  * @param {boolean} aware - whether the observer is aware of the creature
  * @returns {boolean} whether the creature is hidden from the observer
  */
-function isHidden(hiding, aware) {
-  // TODO
-}
+function isHidden(hiding, aware) {}
 
 /**
  * A strike hits if the attack value is greater than or equal
@@ -27,9 +25,7 @@ function isHidden(hiding, aware) {
  * @param {number} ac - the armor class to beat
  * @returns {boolean} whether the strike hits
  */
-function doesStrikeHit(attack, ac) {
-  // TODO
-}
+function doesStrikeHit(attack, ac) {}
 
 /**
  * A strike is a critical hit if the attack value is at least
@@ -38,9 +34,7 @@ function doesStrikeHit(attack, ac) {
  * @param {number} ac - the armor class to beat
  * @returns {boolean} whether the strike is a critical hit
  */
-function doesStrikeCrit(attack, ac) {
-  // TODO
-}
+function doesStrikeCrit(attack, ac) {}
 
 /**
  * A creature can restore hit points (HP) by healing,
@@ -50,9 +44,7 @@ function doesStrikeCrit(attack, ac) {
  * @param {number} healAmount - amount to heal
  * @returns {number} total hit points after healing
  */
-function heal(maxHp, currentHp, healAmount) {
-  // TODO
-}
+function heal(maxHp, currentHp, healAmount) {}
 
 /**
  * When a character uses a skill they have proficiency in,
@@ -70,9 +62,7 @@ function heal(maxHp, currentHp, healAmount) {
  * @param {string} rank - character's proficiency rank
  * @returns {number} the character's proficiency bonus
  */
-function getProficiencyBonus(level, rank) {
-  // TODO
-}
+function getProficiencyBonus(level, rank) {}
 
 /**
  * A creature can get a bonus to its armor class (AC) by taking cover.
@@ -84,9 +74,7 @@ function getProficiencyBonus(level, rank) {
  * @param {boolean} takingCover - whether the creature is actively taking cover
  * @returns {number} the cover bonus to AC
  */
-function getCoverBonus(behindObstacle, takingCover) {
-  // TODO
-}
+function getCoverBonus(behindObstacle, takingCover) {}
 
 /**
  * A creature's current hit points (HP) is reduced by taking damage.
@@ -100,9 +88,7 @@ function getCoverBonus(behindObstacle, takingCover) {
  * @returns {number} 0 if the creature's HP drops to 0 or below
  * @returns {number} the creature's remaining HP after taking damage
  */
-function getRemainingHp(maxHp, currentHp, damage) {
-  // TODO
-}
+function getRemainingHp(maxHp, currentHp, damage) {}
 
 /**
  * All creatures can see in bright light.
@@ -112,9 +98,7 @@ function getRemainingHp(maxHp, currentHp, damage) {
  * @param {string} vision - vision type: "average", "low-light", or "dark"
  * @returns {boolean} whether the creature can see
  */
-function canSee(light, vision) {
-  // TODO
-}
+function canSee(light, vision) {}
 
 /**
  * A strike deals damage if it hits, unless the strike is a critical hit,
@@ -126,6 +110,4 @@ function canSee(light, vision) {
  * @param {number} damage - damage on a normal hit
  * @returns {number} damage dealt by the strike
  */
-function getStrikeDamage(attack, ac, damage) {
-  // TODO
-}
+function getStrikeDamage(attack, ac, damage) {}
