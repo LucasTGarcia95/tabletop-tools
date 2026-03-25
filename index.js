@@ -90,7 +90,10 @@ function getProficiencyBonus(level, rank) {
  * @param {boolean} takingCover - whether the creature is actively taking cover
  * @returns {number} the cover bonus to AC
  */
-function getCoverBonus(behindObstacle, takingCover) {}
+function getCoverBonus(behindObstacle, takingCover) {
+  if (!behindObstacle) return 0;
+  return takingCover ? 4 : 2;
+}
 
 /**
  * A creature's current hit points (HP) is reduced by taking damage.
