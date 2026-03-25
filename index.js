@@ -50,7 +50,10 @@ function doesStrikeCrit(attack, ac) {
  * @param {number} healAmount - amount to heal
  * @returns {number} total hit points after healing
  */
-function heal(maxHp, currentHp, healAmount) {}
+function heal(maxHp, currentHp, healAmount) {
+  const healed = currentHp + healAmount;
+  return Math.min(healed, maxHp);
+}
 
 /**
  * When a character uses a skill they have proficiency in,
