@@ -27,7 +27,9 @@ function isHidden(hiding, aware) {
  * @param {number} ac - the armor class to beat
  * @returns {boolean} whether the strike hits
  */
-function doesStrikeHit(attack, ac) {}
+function doesStrikeHit(attack, ac) {
+  return attack >= ac;
+}
 
 /**
  * A strike is a critical hit if the attack value is at least
