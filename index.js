@@ -16,7 +16,9 @@ function canCastSpell(isSpellPrepared, hasScroll) {
  * @param {boolean} aware - whether the observer is aware of the creature
  * @returns {boolean} whether the creature is hidden from the observer
  */
-function isHidden(hiding, aware) {}
+function isHidden(hiding, aware) {
+  return hiding || !aware;
+}
 
 /**
  * A strike hits if the attack value is greater than or equal
