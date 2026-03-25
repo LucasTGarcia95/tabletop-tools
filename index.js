@@ -38,7 +38,9 @@ function doesStrikeHit(attack, ac) {
  * @param {number} ac - the armor class to beat
  * @returns {boolean} whether the strike is a critical hit
  */
-function doesStrikeCrit(attack, ac) {}
+function doesStrikeCrit(attack, ac) {
+  return attack >= ac + 10;
+}
 
 /**
  * A creature can restore hit points (HP) by healing,
