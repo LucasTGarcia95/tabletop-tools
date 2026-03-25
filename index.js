@@ -107,7 +107,14 @@ function getCoverBonus(behindObstacle, takingCover) {
  * @returns {number} 0 if the creature's HP drops to 0 or below
  * @returns {number} the creature's remaining HP after taking damage
  */
-function getRemainingHp(maxHp, currentHp, damage) {}
+function getRemainingHp(maxHp, currentHp, damage) {
+  if (damage >= maxHp * 2) {
+    return -1;
+  }
+
+  const remaining = currentHp - damage;
+  return remaining > 0 ? remaining : 0;
+}
 
 /**
  * All creatures can see in bright light.
